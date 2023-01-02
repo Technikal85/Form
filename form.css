@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.form-header {
+  width: 60%;
+}
+
+.form-sign-up {
+  width: 60%;
+}
+
+.form-footer {
+  width: 60%;
+}
+
