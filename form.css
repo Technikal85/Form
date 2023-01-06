@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url(Norse-Bold.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +11,101 @@
 
 body {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
+  background-color: rgb(236, 236, 236);
 }
 
-.form-header {
-  width: 60%;
+.main-pic{
+ width: 40%;
+}
+
+.main-form {
+ display: flex;
+ flex-direction: column;
+}
+
+.form-header p,
+.header-span {
+  display: block;
+  padding: 0 10% 3% 5% ;
+  font-size: large;
+  font-weight: 700;
 }
 
 .form-sign-up {
-  width: 60%;
+  padding-left: 5%;
+  background-color: whitesmoke;
+}
+
+.form-sign-up > span {
+  display: block;
+  padding: 3% 0 ;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.form-sec {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-sec-2 {
+  margin-left: 100px;
+}
+
+.form-row {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid,
+.form-row input[type='tel']:invalid  {
+  border: 1px solid #D55C5F;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+
+.form-row input[type='text']:valid,
+.form-row input[type='email']:valid,
+.form-row input[type='tel']:valid {
+  border: 1px solid #4dad30;
+  box-shadow: none; /* Remove default red glow in Firefox */
+}
+
+input {
+  font-size: large;
+  appearance: none;
 }
 
 .form-footer {
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 3% 0 0 5%;
+}
+
+.first-button {
+  width: 300px;
+  border-radius: 3px;
+  padding: 10px 20px;
+  background-color: #596d48;
+  color: white;
+}
+
+.footer-span {
+  padding: 3% 0 0 1%;
+}
+
+.log-in-btn {
+  border: none;
+  padding-left: 10px;
+  color: #596d48;
+  font-weight: 700;
+}
+
+input:focus {
+  background: rgba(0, 0, 0, 0.1);
 }
 
